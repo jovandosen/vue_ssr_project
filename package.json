@@ -15,5 +15,10 @@
     "js"
   ],
   "author": "jovan dosen",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "vue": "^2.6.11",
+    "vue-server-renderer": "^2.6.11"
+  }
 }
