@@ -1,10 +1,16 @@
-const Vue = require('vue');
+import Vue from 'vue'
+import App from './App.vue'
+import { createRouter } from "./router";
 
-module.exports = function createApp () {
-    return new Vue({
-        data: {
-            name: "Okubanjo Oluwafunsho"
-        },
-        template: `<div>My name is: {{ name }}</div>`
+export function createApp () {
+    
+    const router = createRouter();
+    
+    const app = new Vue({
+        
+        router,
+        render: h => h(App)
+        
     });
-};
+    return { app, router}
+}
